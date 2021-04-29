@@ -44,7 +44,7 @@ def last_char2(val):
     return switch.get(val)
 
 
-def main():
+def generateNRIC():
     # this script generates random valid nric numbers
     nric = []
 
@@ -67,6 +67,4 @@ def main():
     elif nric[0] == 'F' or nric[0] == 'G':
         nric.append(last_char2(y))
 
-    print('nric: ' + ''.join(map(str,nric)) + '\n')
-
-main()
+    return ''.join(map(str,nric))
